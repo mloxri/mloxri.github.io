@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loxley Analytics | Technical Data Partner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d; /* Deep Slate Blue */
+            --accent: #2d6a4f;  /* Research Green */
+            --text: #2d3748;
+            --light: #f7fafc;
+            --mono: 'Roboto Mono', monospace;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Header --- */
+        header {
+            padding: 5rem 0 3rem 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .hero-desc {
+            max-width: 700px;
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #a0aec0;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+
+        /* --- Tech Stack --- */
+        .stack-list {
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .stack-item {
+            background: var(--light);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* --- Footer/CTA --- */
+        .footer {
+            padding: 4rem 0;
+            background: var(--light);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .secondary-link {
+            display: block;
+            margin-top: 1.5rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            section { padding: 3rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Loxley Analytics</h1>
+            <div class="tagline">Technical Data Partner</div>
+            <p class="hero-desc">
+                20+ years of experience providing full-lifecycle data support for NIH-funded longitudinal research. 
+                Specializing in robust ETL pipelines, database architecture, and complex behavioral analytics.
+            </p>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2>Core Capabilities</h2>
+            <div class="grid">
+                <div class="service-card">
+                    <h3>Data Engineering</h3>
+                    <p>Building reproducible ETL pipelines (Python, SQL) and architecting SQL Server environments to ensure research data integrity from collection to analysis.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Research Analytics</h3>
+                    <p>Expertise in longitudinal modeling, repeated-measures designs, and the integration of multimodal datasets, including EMA and survey data.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bio-Sensor Integration</h3>
+                    <p>Specialized processing of time-series data from wearable devices and accelerometers, harmonizing sensor output with observational data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>The Background</h2>
+            <p>
+                With a career anchored in the rigorous public health research environment at <strong>Brown University</strong>, 
+                I have supported over 40 NIH-funded studies. I bridge the gap between high-frequency raw data collection 
+                and the final peer-reviewed publication through technical excellence and strategic data management.
+            </p>
+        </div>
+    </section>
+
+    <section id="stack">
+        <div class="container">
+            <h2>Technical Toolkit</h2>
+            <div class="stack-list">
+                <span class="stack-item">Python</span>
+                <span class="stack-item">SQL (T-SQL)</span>
+                <span class="stack-item">R</span>
+                <span class="stack-item">SAS</span>
+                <span class="stack-item">SPSS</span>
+                <span class="stack-item">Tableau</span>
+                <span class="stack-item">REDCap</span>
+                <span class="stack-item">Qualtrics</span>
+                <span class="stack-item">REST APIs</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.linkedin.com/in/michelle-loxley" class="btn">Connect on LinkedIn</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #718096;">Providence, Rhode Island | Analytics Consulting</p>
+        </div>
+    </div>
+
+</body>
+</html>
